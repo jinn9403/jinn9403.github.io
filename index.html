@@ -3,44 +3,152 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hyeongjin Kim — Homepage</title>
+  <title>Hyeongjin Kim — Instructor & HCI Researcher</title>
+  <meta name="description" content="Instructor (AI Systems Science, Korean Army Academy). HCI researcher integrating computer vision and LLMs within interaction systems. UVA MS (Link Lab & Ultimate User Interface Lab, advised by Dr. Seongkook Heo).">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/assets/prof_pic.jpg">
-  <style>body{font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}</style>
+  <style>
+    html { scroll-behavior:smooth }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial }
+    .chip { display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgb(226 232 240); border-radius:9999px; padding:.25rem .75rem; font-size:.875rem }
+    .card { border:1px solid rgb(226 232 240); border-radius:1rem; background:#fff }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgb(226 232 240); border-radius:.75rem; padding:.5rem .75rem }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
-  <main class="max-w-3xl mx-auto px-4 py-12">
-    <header class="mb-8">
-      <h1 class="text-3xl font-bold">Hyeongjin Kim</h1>
-      <p class="mt-2 text-slate-700">
-        Instructor, AI Systems Science Dept., Korean Army Academy. 
-        M.S. in Computer Science, University of Virginia (2025). Affiliated with the Ultimate User Interface Lab (advised by Dr. Seongkook Heo) and the Link Lab.
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#" class="font-semibold">Hyeongjin Kim</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:opacity-70">About</a>
+        <a href="#teaching" class="hover:opacity-70">Teaching</a>
+        <a href="#research" class="hover:opacity-70">Research</a>
+        <a href="#links" class="hover:opacity-70">Links</a>
+        <a href="#contact" class="hover:opacity-70">Contact</a>
+      </nav>
+      <a href="#contact" class="btn text-sm">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 pt-12 pb-10">
+    <div class="grid md:grid-cols-3 gap-8 items-center">
+      <!-- Left: intro -->
+      <div class="md:col-span-2">
+        <p class="uppercase tracking-widest text-xs font-semibold text-slate-500">Instructor · HCI Researcher</p>
+        <h1 class="mt-2 text-3xl sm:text-4xl font-bold">Hyeongjin Kim</h1>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          Instructor in the <b>AI Systems Science Department</b> at the <b>Korean Army Academy</b>.
+          I received my <b>M.S. in Computer Science</b> from <b>UVA (2025)</b>, advised by <b>Dr. Seongkook Heo</b> in the <b>Ultimate User Interface Lab</b> and affiliated with the <b>Link Lab</b>.
+          My primary area is <b>Human-Computer Interaction (HCI)</b>. I incorporate <b>computer vision</b> and <b>LLMs</b> within HCI systems and plan to further expand this intersection.
+        </p>
+
+        <!-- Social icons -->
+        <div class="mt-5 flex flex-wrap items-center gap-3 text-slate-700">
+          <a class="btn" href="mailto:you@domain.com">📧 <span>Email</span></a>
+          <a class="btn" href="https://github.com/jinn9403" target="_blank" rel="noopener">🐙 <span>GitHub</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">🔗 <span>LinkedIn</span></a>
+          <a class="btn" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">🎓 <span>Scholar</span></a>
+        </div>
+
+        <!-- chips -->
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="chip">HCI</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">LLMs</span>
+          <span class="chip">Telepresence</span>
+          <span class="chip">3D Reconstruction</span>
+          <span class="chip">Multimodal Retrieval</span>
+        </div>
+      </div>
+
+      <!-- Right: photo card -->
+      <div class="md:col-span-1">
+        <div class="card p-4">
+          <img src="/assets/prof_pic.jpg" alt="Hyeongjin Kim" class="w-full rounded-xl object-cover">
+          <div class="mt-3 text-sm text-slate-600">
+            Replace <code>/assets/prof_pic.jpg</code> with your photo file.
+          </div>
+          <div class="mt-4 text-sm">
+            <a class="btn w-full justify-center" href="#links">Quick Links</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links hub -->
+  <section id="links" class="max-w-6xl mx-auto px-4 pb-12">
+    <h2 class="text-2xl font-semibold">Links</h2>
+    <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a class="card p-4 hover:shadow-sm" href="/assets/HyeongjinKim_CV.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a>
+      <a class="card p-4 hover:shadow-sm" href="/assets/SpaceShare_UIST25_Poster.pdf" target="_blank" rel="noopener">🖼️ Poster (PDF)</a>
+      <a class="card p-4 hover:shadow-sm" href="https://youtu.be/DEMO_LINK" target="_blank" rel="noopener">🎥 Demo Video</a>
+      <a class="card p-4 hover:shadow-sm" href="#research">🧪 Research Overview</a>
+      <a class="card p-4 hover:shadow-sm" href="mailto:you@domain.com">✉️ Contact</a>
+      <a class="card p-4 hover:shadow-sm" href="https://github.com/jinn9403" target="_blank" rel="noopener">🐙 GitHub</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 pb-12">
+    <h2 class="text-2xl font-semibold">About</h2>
+    <p class="mt-3 leading-relaxed text-slate-700">
+      I design and build systems that connect spatial understanding with language for remote and collaborative settings.
+      I’m open to collaborations across HCI, 3D vision, multimodal interaction, and educational applications.
+    </p>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="max-w-6xl mx-auto px-4 pb-12">
+    <h2 class="text-2xl font-semibold">Teaching</h2>
+    <ul class="mt-3 text-slate-700 list-disc list-inside space-y-1">
+      <li><b>Introduction to Artificial Intelligence</b> (Fall 2025), Instructor of record</li>
+      <li><b>AI Programming with Python</b> (Fall 2025), Instructor of record</li>
+    </ul>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-semibold">Research</h2>
+    <article class="mt-4 card p-5">
+      <p class="text-sm uppercase tracking-wider text-slate-500">Telepresence · Multimodal Retrieval</p>
+      <h3 class="mt-1 font-semibold">SpaceShare — Make spaces searchable through conversations & images</h3>
+      <p class="mt-2 text-slate-700 text-sm">
+        A video meeting system coupling real-time 3D reconstruction with a multimodal database (dialogue + image analysis),
+        enabling revisitation of specific posters/objects via natural-language queries.
       </p>
-      <p class="mt-2">Primary area: <b>Human-Computer Interaction (HCI)</b>. I incorporate computer vision and large language models (LLMs) within HCI systems and plan to further expand this intersection.</p>
-    </header>
+      <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
+        <span class="chip">Unity</span><span class="chip">Spectacular AI</span><span class="chip">WebRTC</span><span class="chip">YOLO · Whisper · GPT</span>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-3 text-sm">
+        <a class="btn" href="/assets/SpaceShare_UIST25_Poster.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
+        <a class="btn" href="https://youtu.be/DEMO_LINK" target="_blank" rel="noopener">Demo Video</a>
+        <a class="btn" href="https://github.com/jinn9403" target="_blank" rel="noopener">Code (Repo)</a>
+      </div>
+    </article>
+  </section>
 
-    <section class="space-y-2">
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="mailto:you@domain.com">📧 Email</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="https://github.com/your-handle" target="_blank" rel="noopener">🐙 GitHub</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">🔗 LinkedIn</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">🎓 Google Scholar</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="/assets/HyeongjinKim_CV.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="/assets/SpaceShare_UIST25_Poster.pdf" target="_blank" rel="noopener">🖼️ Poster (PDF)</a>
-      <a class="inline-flex items-center gap-2 rounded-lg border px-3 py-2" href="https://youtu.be/DEMO_LINK" target="_blank" rel="noopener">🎥 Demo Video</a>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-semibold">Contact</h2>
+    <div class="mt-4 grid sm:grid-cols-3 gap-4">
+      <div class="card p-4">
+        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">Email</p>
+        <a class="underline" href="mailto:you@domain.com">you@domain.com</a>
+      </div>
+      <div class="card p-4">
+        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">LinkedIn</p>
+        <a class="underline" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a>
+      </div>
+      <div class="card p-4">
+        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">Google Scholar</p>
+        <a class="underline" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">Scholar Profile</a>
+      </div>
+    </div>
+    <p class="mt-8 text-xs text-slate-500">© <span id="year"></span> Hyeongjin Kim</p>
+  </section>
 
-    <hr class="my-8">
-
-    <section>
-      <h2 class="text-xl font-semibold">Research</h2>
-      <p class="mt-2 text-slate-700">
-        SpaceShare: real-time 3D reconstruction + multimodal (dialogue & image) retrieval for remote collaboration. 
-        Users can revisit specific posters/objects by asking natural-language questions.
-      </p>
-    </section>
-
-    <footer class="mt-12 text-xs text-slate-500">© <span id="y"></span> Hyeongjin Kim</footer>
-  </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
